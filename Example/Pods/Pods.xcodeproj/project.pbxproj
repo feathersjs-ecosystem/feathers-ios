@@ -82,6 +82,7 @@
 		E6E7B15FAD6C56681511813DB2666478 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84D274316F8C6F9695294FB40D7596F /* AssertionRecorder.swift */; };
 		E81B5AFF595E829209A15B442132F0C9 /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C0EAA5BA062125C64E6A819695F87C6 /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		ED4C0D1B1CA0BEB900F93D20 /* Feathers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4C0D1A1CA0BEB900F93D20 /* Feathers.swift */; };
+		ED4C0D1D1CA0BFBC00F93D20 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4C0D1C1CA0BFBC00F93D20 /* Service.swift */; };
 		F10FD3129985704FA1610F84FB98EDF5 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31CE50F8B4B99D3C229D2438892ED5B /* Stringers.swift */; };
 		F1D4A8A1FC68EFA7F45945908D70A352 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02297D692E5CA1B1C21CCCDA1853BA44 /* BeNil.swift */; };
 		F9ED64310E5ECA6ADEA272D0BCC1081D /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2543809E4D3D9755B94735346ACDFF03 /* QCKDSL.m */; };
@@ -215,6 +216,7 @@
 		E43EEEBE209F0CF242FBC231937E6922 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
 		ECB4882E47E7537D32F4C677DF4F0B43 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
 		ED4C0D1A1CA0BEB900F93D20 /* Feathers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Feathers.swift; path = Core/Feathers.swift; sourceTree = "<group>"; };
+		ED4C0D1C1CA0BFBC00F93D20 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Core/Services/Service.swift; sourceTree = "<group>"; };
 		F1D4A64A54F414359EC782444B27597B /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Quick/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
 		F5F4CE0DE16848CBDA8A93366A52BEF7 /* NMBExceptionCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBExceptionCapture.m; path = Nimble/objc/NMBExceptionCapture.m; sourceTree = "<group>"; };
 		F689A549CFB432AE0684F3EA3BA8D2FF /* Poll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poll.swift; path = Nimble/Utils/Poll.swift; sourceTree = "<group>"; };
@@ -371,9 +373,8 @@
 		6141A22937DEE1C782C3266DBF24EE43 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				ED4C0D191CA0BE9900F93D20 /* Configurations */,
+				ED4C0D191CA0BE9900F93D20 /* Providers */,
 				ED4C0D181CA0BE9300F93D20 /* Hooks */,
-				ED4C0D131CA0BDEF00F93D20 /* Services */,
 				ED4C0D171CA0BE8600F93D20 /* Authentication */,
 				ED4C0D161CA0BE2300F93D20 /* Extensions */,
 				ED4C0D151CA0BE1E00F93D20 /* Core */,
@@ -514,6 +515,7 @@
 		ED4C0D131CA0BDEF00F93D20 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ED4C0D1C1CA0BFBC00F93D20 /* Service.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -528,6 +530,7 @@
 		ED4C0D151CA0BE1E00F93D20 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				ED4C0D131CA0BDEF00F93D20 /* Services */,
 				ED4C0D1A1CA0BEB900F93D20 /* Feathers.swift */,
 			);
 			name = Core;
@@ -554,11 +557,11 @@
 			name = Hooks;
 			sourceTree = "<group>";
 		};
-		ED4C0D191CA0BE9900F93D20 /* Configurations */ = {
+		ED4C0D191CA0BE9900F93D20 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Configurations;
+			name = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -754,6 +757,7 @@
 			files = (
 				1033484AEF6D59C360AB2501E60DE213 /* feathers-ios-dummy.m in Sources */,
 				ED4C0D1B1CA0BEB900F93D20 /* Feathers.swift in Sources */,
+				ED4C0D1D1CA0BFBC00F93D20 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
