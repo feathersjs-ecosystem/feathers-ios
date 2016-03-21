@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "feathers-ios"
   s.version          = "0.1.0"
-  s.summary          = "A short description of feathers-ios."
+  s.summary          = "FeathersJS iOS Client"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,24 +17,19 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+    Feathers-iOS is an iOS feathersJS client, writen in Swift 2.2. Connect, authenticate,
+    and interact with any feathersjs api with ease.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/feathers-ios"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/feathersjs/feathers-ios"
   s.license          = 'MIT'
   s.author           = { "Brendan Conron" => "conronb@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/feathers-ios.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/feathers/feathers-ios.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/feathersjs'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'feathers-ios' => ['Pod/Assets/*.png']
-  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
