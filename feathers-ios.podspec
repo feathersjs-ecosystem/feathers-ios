@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
     Feathers-iOS is an iOS feathersJS client, writen in Swift 2.2. Connect, authenticate,
     and interact with any feathersjs api with ease.
@@ -30,6 +30,26 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.default_subspecs = 'Core'
+
+  promise_dependencies = lambda do |spec|
+      spec.dependency = 'PromiseKit'
+  end
+
+  all_platforms = lambda do |spec|
+    spec.ios.deployment_target = "8.0"
+    spec.osx.deployment_target = "10.10"
+    spec.watchos.deployment_target = "2.0"
+    spec.tvos.deployment_target = '9.0'
+  end
+
+  # Subspecs
+
+  s.subspec 'Core' do |spec|
+    spec.source_files = ['Pod/Classes/Core/**/*.{swift}']
+    all_platforms.call(spec)
+  end
+
+
 
 end
