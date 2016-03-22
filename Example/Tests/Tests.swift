@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import feathers-ios
+@testable import feathers_ios
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {

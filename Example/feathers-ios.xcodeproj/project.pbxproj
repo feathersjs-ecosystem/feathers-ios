@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12CBD5EA9A4416A6C9B6509B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E234CFECA2625EFB0938B2B /* Pods.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		FA0EB36FAB258E6A047E1FDB /* Pods_feathers_ios_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8C7BFD75B53211566FED10 /* Pods_feathers_ios_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -14,6 +15,7 @@
 /* Begin PBXFileReference section */
 		2B7870500165A2055ED48427 /* Pods-feathers-ios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feathers-ios_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feathers-ios_Tests/Pods-feathers-ios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E80FF9751BAA6C77DD415D3 /* Pods-feathers-ios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feathers-ios_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-feathers-ios_Tests/Pods-feathers-ios_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5E234CFECA2625EFB0938B2B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* feathers-ios_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "feathers-ios_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0EB36FAB258E6A047E1FDB /* Pods_feathers_ios_Tests.framework in Frameworks */,
+				12CBD5EA9A4416A6C9B6509B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				ED8C7BFD75B53211566FED10 /* Pods_feathers_ios_Tests.framework */,
+				5E234CFECA2625EFB0938B2B /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,7 +197,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-feathers-ios_Tests/Pods-feathers-ios_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		313C60941FD75734F7B5C84F /* Copy Pods Resources */ = {

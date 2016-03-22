@@ -1,0 +1,6 @@
+framework module feathers_ios {
+  umbrella header "feathers-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
