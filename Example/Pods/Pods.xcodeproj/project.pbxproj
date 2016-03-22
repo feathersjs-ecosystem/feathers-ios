@@ -138,6 +138,7 @@
 		E6E7B15FAD6C56681511813DB2666478 /* AssertionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E10CEAC715F51A1FF65B47E5224AB5 /* AssertionRecorder.swift */; };
 		E75333FCEF9481A872D746FBE7330239 /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 41DEBD6B668552601A001DBC825EE393 /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E81B5AFF595E829209A15B442132F0C9 /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A0E74ABE644AA3C91FE320CE213829 /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ED4C0D211CA0C86500F93D20 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4C0D201CA0C86500F93D20 /* Provider.swift */; };
 		F0C19BE23CC2920F2964B30D2A063D98 /* CALayer+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = E28256CCD1F929B1E2AF7ABF1D4C04B8 /* CALayer+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F10FD3129985704FA1610F84FB98EDF5 /* Stringers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4574423C6A00FE1E0FCF0389E09FB /* Stringers.swift */; };
 		F1D4A8A1FC68EFA7F45945908D70A352 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC21640EE5705DBA92A538572A241298 /* BeNil.swift */; };
@@ -287,7 +288,7 @@
 		7E37DAEB8D5C3F2E135EB6FDC1A2C3FA /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
 		7F1B6FAB3E06808CA22166EC293231C7 /* CALayer+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+AnyPromise.m"; path = "Categories/QuartzCore/CALayer+AnyPromise.m"; sourceTree = "<group>"; };
 		7F96E450E4D6DEDC135C83CAC7AEF66A /* Callsite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callsite.swift; path = Quick/Callsite.swift; sourceTree = "<group>"; };
-		809870849EF562950F7C162154BD7A6E /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		809870849EF562950F7C162154BD7A6E /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Services/Service.swift; sourceTree = "<group>"; };
 		80FC62C909A51FB637DABD5AB6A30AAC /* Umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Umbrella.h; path = Sources/Umbrella.h; sourceTree = "<group>"; };
 		8191649F380240EF42B1892B0E508166 /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
 		827DE17C42720FE8D068768DCE3151EA /* Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-umbrella.h"; sourceTree = "<group>"; };
@@ -370,6 +371,7 @@
 		EB303A267044E7EA30641BF2AA2E5777 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Quick/Filter.swift; sourceTree = "<group>"; };
 		EBA9F642574E90025712E2ED50A63DCA /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Categories/UIKit/UIView+AnyPromise.h"; sourceTree = "<group>"; };
 		ECF51D2A9A11B173F7F9E067F20656EB /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4C0D201CA0C86500F93D20 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Provider.swift; path = Services/Provider.swift; sourceTree = "<group>"; };
 		EE14FF2EDB9343F136C79AB9FAF1AB83 /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
 		EF6E974D414B5999AFA537FBCE2A1469 /* Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.xcconfig; sourceTree = "<group>"; };
 		EFFE974A8121CB65B949196669A04A70 /* URLDataPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLDataPromise.swift; path = Sources/URLDataPromise.swift; sourceTree = "<group>"; };
@@ -499,9 +501,9 @@
 		0C149ACCAC51EE9C3AB954173D45DC3E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				809870849EF562950F7C162154BD7A6E /* Service.swift */,
 			);
-			path = Services;
+			name = Services;
+			path = Core/Services;
 			sourceTree = "<group>";
 		};
 		14244B9F9421D89B6BAFDB5661B477D8 /* Support Files */ = {
@@ -636,6 +638,8 @@
 		650B9961A7343716D26703B4879501ED /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				ED4C0D1F1CA0C82C00F93D20 /* Providers */,
+				0C149ACCAC51EE9C3AB954173D45DC3E /* Services */,
 				72B87CC43DB8394B2BF409442923B5BC /* Core */,
 			);
 			path = Classes;
@@ -677,7 +681,8 @@
 			isa = PBXGroup;
 			children = (
 				60328CE36E4A11CC9A635B714A479EB1 /* Feathers.swift */,
-				0C149ACCAC51EE9C3AB954173D45DC3E /* Services */,
+				809870849EF562950F7C162154BD7A6E /* Service.swift */,
+				ED4C0D201CA0C86500F93D20 /* Provider.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -865,6 +870,14 @@
 				5836B546C3EB0005926392E2A3DC92DF /* UIKit */,
 			);
 			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		ED4C0D1F1CA0C82C00F93D20 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Providers;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		F996580930E0987003543FE5807DAA97 /* Support Files */ = {
@@ -1212,6 +1225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4C0D211CA0C86500F93D20 /* Provider.swift in Sources */,
 				9900094A1701F52F36C21ED4C85A086C /* feathers-ios-dummy.m in Sources */,
 				92D4DC718C2B662947FD022065B77A6F /* Feathers.swift in Sources */,
 				11F7C071E84BD22B54F13B4324DA665B /* Service.swift in Sources */,
