@@ -8,6 +8,10 @@
 
 import UIKit
 
-class Feathers {
+public class Feathers {
+    static let singleton = Feathers()
+}
 
+public extension Feathers {
+    public final func use()
 }
