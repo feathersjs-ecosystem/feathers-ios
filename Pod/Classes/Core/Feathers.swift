@@ -23,10 +23,13 @@ public extension Feathers {
         self.providers.append(provider)
     }
 
-}
-
-public extension Feathers {
     public final func use(location: String, service: Service) {
         self.services[location] = service
+        service.setup(self, path: location)
     }
+
+    public final func services(location: String) -> Service? {
+        return self.services[location]
+    }
+
 }
