@@ -1,25 +1,35 @@
 {
   "name": "feathers-ios",
   "version": "0.1.0",
-  "summary": "A short description of feathers-ios.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/feathers-ios",
+  "summary": "FeathersJS iOS Client",
+  "description": "Feathers-iOS is an iOS feathersJS client, writen in Swift 2.2. Connect, authenticate,\nand interact with any feathersjs api with ease.",
+  "homepage": "https://github.com/feathersjs/feathers-ios",
   "license": "MIT",
   "authors": {
     "Brendan Conron": "conronb@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/feathers-ios.git",
+    "git": "https://github.com/feathers/feathers-ios.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/feathersjs",
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "feathers-ios": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": [
+        "Pod/Classes/Core/**/*.{swift}"
+      ],
+      "platforms": {
+        "ios": "8.0",
+        "osx": "10.10",
+        "watchos": "2.0",
+        "tvos": "9.0"
+      }
+    }
+  ]
 }
