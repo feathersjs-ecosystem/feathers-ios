@@ -1,29 +1,19 @@
-# feathers-ios
+# feathers-ios-client
+Feathers service client for iOS
 
-[![CI Status](http://img.shields.io/travis/Brendan Conron/feathers-ios.svg?style=flat)](https://travis-ci.org/Brendan Conron/feathers-ios)
-[![Version](https://img.shields.io/cocoapods/v/feathers-ios.svg?style=flat)](http://cocoapods.org/pods/feathers-ios)
-[![License](https://img.shields.io/cocoapods/l/feathers-ios.svg?style=flat)](http://cocoapods.org/pods/feathers-ios)
-[![Platform](https://img.shields.io/cocoapods/p/feathers-ios.svg?style=flat)](http://cocoapods.org/pods/feathers-ios)
-
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-feathers-ios is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "feathers-ios"
+## Register a service
+### Typically in your app delegate
+```objective-c
+[Feathers registerService:@"todos" host:@"http://localhost:3000"];
 ```
 
-## Author
+### Use the service in your app
 
-Brendan Conron, conronb@gmail.com
+```objective-c
+FeathersService *todoService = Feathers.services[@"todos"];
 
-## License
-
-feathers-ios is available under the MIT license. See the LICENSE file for more info.
+[todoService find:@{@"name" : @"task 1"}
+       completion:^(NSArray *results, NSError *error) {        
+    NSLog(@"%@", results);
+}];
+```
