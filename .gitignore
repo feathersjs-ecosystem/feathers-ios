@@ -20,6 +20,7 @@ DerivedData
 *.ipa
 
 Example/Pods/*
+Example/Pods/Target\ Support\ Files/*
 
 # Bundler
 .bundle
