@@ -1,34 +1,94 @@
 {
   "name": "feathers-ios",
   "version": "0.1.0",
-  "summary": "FeathersJS iOS Client",
-  "description": "Feathers-iOS is an iOS feathersJS client, writen in Swift 2.2. Connect, authenticate,\nand interact with any feathersjs api with ease.",
-  "homepage": "https://github.com/feathersjs/feathers-ios",
-  "license": "MIT",
+  "summary": "A short description of feathers-ios.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/feathers-ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
     "Brendan Conron": "conronb@gmail.com"
   },
   "source": {
-    "git": "https://github.com/feathers/feathers-ios.git",
+    "git": "https://github.com/<GITHUB_USERNAME>/feathers-ios.git",
     "tag": "0.1.0"
   },
-  "social_media_url": "https://twitter.com/feathersjs",
   "platforms": {
     "ios": "8.0"
   },
-  "requires_arc": true,
   "default_subspecs": "Core",
   "subspecs": [
     {
       "name": "Core",
       "source_files": [
-        "Pod/Classes/Core/**/*.{swift}"
+        "feathers-ios/Classes/Core/*.{swift}"
       ],
-      "platforms": {
-        "ios": "8.0",
-        "osx": "10.10",
-        "watchos": "2.0",
-        "tvos": "9.0"
+      "dependencies": {
+        "Result": [
+
+        ]
+      }
+    },
+    {
+      "name": "Rest",
+      "source_files": [
+        "feathers-ios/Classes/Core/*.{swift}",
+        "feathers-ios/Classes/Rest/*.{swift}"
+      ],
+      "dependencies": {
+        "Result": [
+
+        ],
+        "Alamofire": [
+
+        ]
+      }
+    },
+    {
+      "name": "Socket",
+      "source_files": [
+        "feathers-ios/Classes/Core/*.{swift}",
+        "feathers-ios/Classes/Socket/*.{swift}"
+      ],
+      "dependencies": {
+        "Result": [
+
+        ],
+        "Socket.IO-Client-Swift": [
+
+        ]
+      }
+    },
+    {
+      "name": "ObjectMapper",
+      "source_files": [
+        "feathers-ios/Classes/Core/*.{swift}",
+        "feathers-ios/Classes/ObjectMapper/*.{swift}"
+      ],
+      "dependencies": {
+        "Result": [
+
+        ],
+        "ObjectMapper": [
+
+        ]
+      }
+    },
+    {
+      "name": "ReactiveCocoa",
+      "source_files": [
+        "feathers-ios/Classes/Core/*.{swift}",
+        "feathers-ios/Classes/Reactive/ReactiveCocoa/*.{swift}"
+      ],
+      "dependencies": {
+        "Result": [
+
+        ],
+        "ReactiveCocoa": [
+
+        ]
       }
     }
   ]
