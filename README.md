@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/feathers-ios.svg?style=flat)](http://cocoapods.org/pods/feathers-ios)
 [![Platform](https://img.shields.io/cocoapods/p/feathers-ios.svg?style=flat)](http://cocoapods.org/pods/feathers-ios)
 
-## Usage
+## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -21,6 +21,7 @@ pod "feathers-ios"
 ```
 
 ## Author
+
 Brendan Conron, conronb@gmail.com
 
 ## License
