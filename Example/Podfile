@@ -1,11 +1,10 @@
-source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
-
-pod 'PromiseKit'
-
-target 'feathers-ios_Tests', :exclusive => true do
-  pod 'feathers-ios', :path => '../'
-
-  pod 'Quick', '~> 0.8.0'
-  pod 'Nimble', '3.0.0'
+pod 'feathers-ios', :path => '../'
+pod 'feathers-ios/Rest', :path => '../'
+pod 'feathers-ios/Socket', :path => '../'
+pod 'feathers-ios/ObjectMapper', :path => '../'
+pod 'feathers-ios/ReactiveCocoa', :path => '../'
+target 'feathers-ios_Tests' do
+  pod 'Quick', '~> 0.8'
+  pod 'Nimble', '~> 3.0'
 end
