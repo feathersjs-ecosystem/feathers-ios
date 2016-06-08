@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   end
 
   rest_dependencies = lambda do |spec|
-    spec.dependency 'Alamofire'
+    spec.dependency 'Just'
   end
 
   reactive_cocoa_dependencies = lambda do |spec|
