@@ -8,6 +8,7 @@
 
 import Foundation
 import Result
+import Just
 
 public class RestProvider: Provider {
 
