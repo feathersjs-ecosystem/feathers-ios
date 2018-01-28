@@ -1,4 +1,4 @@
-# This is a work in progress and is not ready to be used
+# This project is no longer under development. For a newer iOS client see [feathers-swift](https://github.com/feathersjs-ecosystem/feathers-swift)
 
 # feathers-ios-client
 Feathers service client for iOS
